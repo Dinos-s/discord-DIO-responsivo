@@ -135,14 +135,14 @@ main {
     background-color: #F6F6F6;
 }
 
-#info-channels,
-#info-members,
-#info-connect {
+#channels,
+#members,
+#connect {
     width: 100%;
     padding: 2.5rem 1.5rem;
 }
 
-#connect  #info-connect h2 {
+#connect #info-connect h2 {
    margin-top: 1.69rem;
    margin-bottom: 1.69rem;
 }
