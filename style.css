@@ -7,16 +7,33 @@
     box-sizing: border-box;
 }
 
-h1 {
+h1, h2 {
     font-family: 'Luckiest Guy', sans-serif;
     font-size: 2rem;
     font-weight: 400;
     text-transform: uppercase;
+}
+
+h1 {
     color: #FFFFFF;
 }
 
 h3, p {
     font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+h2, h3, p {
+    color: #23272A;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 header {
@@ -48,7 +65,7 @@ header #header-content h1 {
 }
 
 header #header-content p {
-    color: #FFFFFF;
+    color: #FFF;
     max-width: 100%;
     margin-bottom: 1.5rem;
 }
@@ -80,7 +97,7 @@ main {
     margin: auto;
 }
 
-#servers{
+#servers {
     width: 90%;
     margin: auto;
     display: flex;
@@ -88,28 +105,46 @@ main {
     justify-content: center;
 }
 
-#servers #img-server {
+#servers #img-server,
+#channels #img-channel,
+#members #img-member,
+#connect #img-connect {
     margin-bottom: 27px;
 }
 
-#servers #img-server img {
+#servers #img-server img,
+#channels #img-channel img,
+#members #img-members img,
+#connect #img-connect img {
     width: 100%;
     margin: auto;
 }
 
-#servers #info-servers h3 {
+#servers #info-servers h3,
+#channels #info-channels h3,
+#members #info-members h3 {
     margin-top: 1rem;
     margin-bottom: 27px;
-    color: #23272A;
-    font-weight: 800;
-    font-size: 1.5rem;
 }
 
 #servers #info-servers p {
-    color: #23272A;
-    font-size: 1rem;
-    font-weight: 400;
     margin-bottom: 2.5rem;
+}
+
+#channels, #connect {
+    background-color: #F6F6F6;
+}
+
+#info-channels,
+#info-members,
+#info-connect {
+    width: 100%;
+    padding: 2.5rem 1.5rem;
+}
+
+#connect  #info-connect h2 {
+   margin-top: 1.69rem;
+   margin-bottom: 1.69rem;
 }
 
 footer {
