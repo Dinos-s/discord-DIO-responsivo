@@ -48,20 +48,20 @@ header {
     flex-wrap: wrap;
 
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
 }
 
 header #header-content {
-   width: 70%;
-   max-width: 37.25rem;
+    width: 70%;
+    max-width: 37.25rem;
 }
 
 header #header-content h1 {
-   text-align: left;
+    text-align: left;
 
-   width: 17.375rem;
-   margin-top: 3rem;
-   margin-bottom: 1.5rem;
+    width: 17.375rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 header #header-content p {
@@ -82,22 +82,25 @@ header #header-content #header-buttons button {
 }
 
 button#download {
-   background: #FFF;
-   color: #23272A;
-   margin-bottom: 1rem;
+    background: #FFF;
+    color: #23272A;
+    margin-bottom: 1rem;
 }
 
 button#web {
-   background: #23272A;
-   color: #FFF;
-   margin-bottom: 3rem;
+    background: #23272A;
+    color: #FFF;
+    margin-bottom: 3rem;
 }
 
 main {
     margin: auto;
 }
 
-#servers {
+#servers,
+#channels,
+#members ,
+#connect {
     width: 90%;
     margin: auto;
     display: flex;
@@ -142,9 +145,19 @@ main {
     padding: 2.5rem 1.5rem;
 }
 
+/* #channels,
+#members ,
+#connect {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-content: center;
+   flex-wrap: wrap;
+} */
+
 #connect #info-connect h2 {
-   margin-top: 1.69rem;
-   margin-bottom: 1.69rem;
+    margin-top: 1.69rem;
+    margin-bottom: 1.69rem;
 }
 
 footer {
@@ -154,4 +167,119 @@ footer {
     align-items: center;
 
     padding: 16px 8px;
+}
+
+@media screen and (min-width: 1280px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    header {
+        background-image: url("/assets/header.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    header #header-content {
+        width: 70%;
+        max-width: 47.3125rem;
+        margin: 5rem auto 5rem auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header #header-content h1, 
+    header #header-content p {
+        text-align: center;
+    }
+
+    header #header-content h1 {
+        width: 19.5625rem;
+    }
+
+    header #header-content #header-buttons {
+        display: flex;
+    }
+
+    header #header-content #header-buttons button#download {
+        width: 12.8125rem;
+    }
+
+    header #header-content #header-buttons button#web {
+        margin-left: 1rem;
+        width: 17.5625rem;
+    }
+
+    #servers {
+        flex-direction: row;
+        max-width: 60.79rem;
+        margin: auto;
+    }
+
+    #servers #img-server,
+    #members #img-members {
+        margin-right: 1rem;
+    }
+
+    #servers #img-server img,
+    #channels #img-channel img,
+    #members #img-members img {
+        max-width: 37.9375rem;
+    }
+
+    #channels {
+        flex-direction: row-reverse;
+    }
+
+    #channels, #members {
+        max-width: 60.79rem;
+        margin: auto;
+    }
+
+    #channels #info-channel, 
+    #members #info-members {
+        width: 21rem;
+    }
+
+    #members {
+      flex-direction: row;
+   }
+
+   #connect {
+      margin: auto;
+   }
+
+    #connect #info-connect {
+        max-width: 50.125rem;
+    }
+
+    #connect #info-connect h2 {
+        width: 38rem;
+    }
+
+    #connect #info-connect h2,
+    #connect #info-connect p {
+        text-align: center;
+    }
+
+    #connect #img-connect img {
+        width: 49rem;
+        margin: auto;
+    }
+
+    footer svg {
+      width: 14.375rem;
+      height: 3.9375rem;
+   }
 }
